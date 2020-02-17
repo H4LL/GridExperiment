@@ -5,6 +5,7 @@ Open a fresh ubuntu instance;
 ```
 git clone https://github.com/H4LL/GridExperiment.git
 cd GridExperiment
+git checkout ubuntu_vm
 source run_entire_experiment.sh
 ```
 
