@@ -23,7 +23,8 @@ conda activate pysyft
 conda install jupyter notebook
 pip install --upgrade --force-reinstall zstd
 pip install tqdm
-
+pip install pandas
+pip install matplotlib
 
 # Install PySyft Library
 cd ~
