@@ -1,0 +1,154 @@
+Downloading http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz to ./dataset/MNIST/raw/train-images-idx3-ubyte.gz
+Extracting ./dataset/MNIST/raw/train-images-idx3-ubyte.gz to ./dataset/MNIST/raw
+Downloading http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz to ./dataset/MNIST/raw/train-labels-idx1-ubyte.gz
+Extracting ./dataset/MNIST/raw/train-labels-idx1-ubyte.gz to ./dataset/MNIST/raw
+Downloading http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz to ./dataset/MNIST/raw/t10k-images-idx3-ubyte.gz
+Extracting ./dataset/MNIST/raw/t10k-images-idx3-ubyte.gz to ./dataset/MNIST/raw
+Downloading http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz to ./dataset/MNIST/raw/t10k-labels-idx1-ubyte.gz
+Extracting ./dataset/MNIST/raw/t10k-labels-idx1-ubyte.gz to ./dataset/MNIST/raw
+Processing...
+Done!
+X tensor pointers:  (Wrapper)>[PointerTensor | me:66757019702 -> Bob:37651311711]
+	Tags: #mnist #X #dataset 
+	Shape: torch.Size([5000, 1, 28, 28])
+	Description: The input datapoints to the MNIST dataset.... (Wrapper)>[PointerTensor | me:31847016258 -> Alice:11307948052]
+	Tags: #mnist #X #dataset 
+	Shape: torch.Size([5000, 1, 28, 28])
+	Description: The input datapoints to the MNIST dataset....
+Y tensor pointers:  (Wrapper)>[PointerTensor | me:93524535335 -> Bob:94958127999]
+	Tags: #mnist #Y #dataset 
+	Shape: torch.Size([5000])
+	Description: The input labels to the MNIST dataset.... (Wrapper)>[PointerTensor | me:67701629928 -> Alice:5574700375]
+	Tags: #mnist #Y #dataset 
+	Shape: torch.Size([5000])
+	Description: The input labels to the MNIST dataset....
+Downloading http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz to ./data/MNIST/raw/train-images-idx3-ubyte.gz
+Extracting ./data/MNIST/raw/train-images-idx3-ubyte.gz to ./data/MNIST/raw
+Downloading http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz to ./data/MNIST/raw/train-labels-idx1-ubyte.gz
+Extracting ./data/MNIST/raw/train-labels-idx1-ubyte.gz to ./data/MNIST/raw
+Downloading http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz to ./data/MNIST/raw/t10k-images-idx3-ubyte.gz
+Extracting ./data/MNIST/raw/t10k-images-idx3-ubyte.gz to ./data/MNIST/raw
+Downloading http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz to ./data/MNIST/raw/t10k-labels-idx1-ubyte.gz
+Extracting ./data/MNIST/raw/t10k-labels-idx1-ubyte.gz to ./data/MNIST/raw
+Processing...
+Done!
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
+Sending data to: Grid Worker < id: Bob >
+Sending data to: Grid Worker < id: Alice >
