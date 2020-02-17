@@ -1,5 +1,5 @@
 #!/ bin / bash
 
 source installation.sh
-source run_experiment.sh
-source graphs.sh
+source GridExperiment/run_experiment.sh
+source GridExperiment/graphs.sh
