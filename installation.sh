@@ -6,6 +6,7 @@ sudo apt update
 #Get GCC
 sudo apt install gcc
 sudo apt install moreutils
+sudo apt install curl
 
 #Install Docker
 sudo snap install docker
