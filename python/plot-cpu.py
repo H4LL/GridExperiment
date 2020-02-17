@@ -11,7 +11,7 @@ pygrid_gateway_1 = pd.read_csv('results/graphs/pygrid_gateway_1/cpu.csv', delimi
 # Create seconds labels
 x = []
 i = 1
-while (i < len(pygrid_james_1)):
+while (i < (len(pygrid_james_1)+1)):
     x.append(i*3)
     i+=1
 
