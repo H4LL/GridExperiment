@@ -21,3 +21,4 @@ This should work for any training scenario. Just put your data distribution and 
 
 - The Kb to Mb in the block i/o  is giving me issus. Need to write a script to pre-process this into a standard format (kb). This should make these display correctly
 - Network activity is measured through tcpdump for now as the containers only work on host mode. This should be fixed so we can go on bridged adapter mode. This is better than tcpdump as it keeps up with the tempo of other measurements.
+- Memory creeps up while training. This is probably because garbage collection is off on the version of PyGrid I'm using. This should really be off for a proper experiment.
