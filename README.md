@@ -3,6 +3,7 @@
 Open a fresh ubuntu instance;
 
 ```
+sudo apt install git
 git clone https://github.com/H4LL/GridExperiment.git
 cd GridExperiment
 git checkout ubuntu_vm
