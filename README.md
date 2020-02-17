@@ -1,6 +1,6 @@
 # GridExperiment
 
-Open a fresh ubuntu instance;
+Open a fresh aws ubuntu instance;
 
 ```
 git clone https://github.com/H4LL/GridExperiment.git
