@@ -8,13 +8,13 @@ sudo docker build -t openmined/grid-node ./app/websocket/
 sudo docker build -t openmined/grid-gateway ./gateway/
 
 git clone https://github.com/H4LL/GridExperiment.git
+mkdir GridExperiment/results
 
 
 #SINGLE EXECUTION EXPERIMENT
 
 #SET UP SUBNET
 sudo docker-compose up &
-SUBNET=$!
 sleep 6
 
 #DISTRIBUTE DATA
@@ -32,7 +32,7 @@ while true; do sudo docker stats --no-stream | ts '[%H:%M:%S]' | tee --append Gr
 STATS=$!
 sudo tcpdump -i lo -vv > GridExperiment/results/train.pcap &
 PCAP=$!
-python GridExperiment/python/learn_from_grid.py | tee GridExperiment/results/learn_from_grid_output.txt
+python GridExperiment/python/learn_from_grid.py | tee --append GridExperiment/results/learn_from_grid_output.txt
 sudo kill -9 "$STATS"
 sudo kill -9 "$PCAP"
 
