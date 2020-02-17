@@ -7,9 +7,7 @@ sed -i -e 's,git+git://github.com/OpenMined/PySyft@master,git+git://github.com/O
 sudo docker build -t openmined/grid-node ./app/websocket/
 sudo docker build -t openmined/grid-gateway ./gateway/
 
-git clone https://github.com/H4LL/GridExperiment.git
 mkdir GridExperiment/results
-
 
 #SINGLE EXECUTION EXPERIMENT
 

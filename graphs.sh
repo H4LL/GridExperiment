@@ -1,6 +1,6 @@
 #!/ bin / bash
 
-cd ~/PyGrid
+cd ~/PyGrid/GridExperiment
 cat results/connect_stats.txt results/train_stats.txt > results/connect_stats.csv
 sed -i -e 's/] /],/g' results/connect_stats.csv
 sed -i -e 's/               /,/g' results/connect_stats.csv

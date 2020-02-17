@@ -38,3 +38,5 @@ git clone https://github.com/OpenMined/PyGrid.git
 cd PyGrid
 git checkout 728f99b07669af795907d1e6d88fe3ceab9ac955
 pip install .
+
+git clone https://github.com/H4LL/GridExperiment.git
