@@ -7,30 +7,34 @@ sed -i -e 's,git+git://github.com/OpenMined/PySyft@master,git+git://github.com/O
 sudo docker build -t openmined/grid-node ./app/websocket/
 sudo docker build -t openmined/grid-gateway ./gateway/
 
+git clone https://github.com/H4LL/GridExperiment.git
+
+
 #SINGLE EXECUTION EXPERIMENT
 
 #SET UP SUBNET
 sudo docker-compose up &
 SUBNET=$!
+sleep 6
 
 #DISTRIBUTE DATA
-while true; do sudo docker stats --no-stream | ts '[%H:%M:%S]' | tee --append experiment/results/connect_stats.txt; sleep 0.5; done &
+while true; do sudo docker stats --no-stream | ts '[%H:%M:%S]' | tee --append GridExperiment/results/connect_stats.txt; sleep 0.5; done &
 STATS=$!
-sudo tcpdump -i lo -vv > experiment/results/connect.pcap &
+sudo tcpdump -i lo -vv > GridExperiment/results/connect.pcap &
 PCAP=$!
-python experiment/python/connect_nodes.py | tee experiment/results/connect_nodes_output.txt
+python GridExperiment/python/connect_nodes.py | tee GridExperiment/results/connect_nodes_output.txt
 sudo kill -9 "$STATS"
 sudo kill -9 "$PCAP"
 
 
 #TRAIN ON DATA
-while true; do sudo docker stats --no-stream | ts '[%H:%M:%S]' | tee --append experiment/results/train_stats.txt; sleep 0.5; done &
+while true; do sudo docker stats --no-stream | ts '[%H:%M:%S]' | tee --append GridExperiment/results/train_stats.txt; sleep 0.5; done &
 STATS=$!
-sudo tcpdump -i lo -vv > experiment/results/train.pcap &
+sudo tcpdump -i lo -vv > GridExperiment/results/train.pcap &
 PCAP=$!
-python experiment/python/learn_from_grid.py | tee experiment/results/learn_from_grid_output.txt
+python GridExperiment/python/learn_from_grid.py | tee GridExperiment/results/learn_from_grid_output.txt
 sudo kill -9 "$STATS"
 sudo kill -9 "$PCAP"
 
 #TEAR DOWN SUBNET
-sudo kill -9 "$SUBNET"
+sudo docker stop $(sudo docker ps -a -q)
