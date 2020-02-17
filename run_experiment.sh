@@ -9,6 +9,8 @@ sudo docker build -t openmined/grid-gateway ./gateway/
 
 mkdir GridExperiment/results
 
+rm GridExperiment/results/connect_stats.txt
+rm GridExperiment/results/train_stats.txt
 #SINGLE EXECUTION EXPERIMENT
 
 #SET UP SUBNET
@@ -18,7 +20,7 @@ sleep 6
 #DISTRIBUTE DATA
 while true; do sudo docker stats --no-stream | ts '[%H:%M:%S]' | tee --append GridExperiment/results/connect_stats.txt; sleep 0.5; done &
 STATS=$!
-sudo tcpdump -i lo -vv > GridExperiment/results/connect.pcap &
+sudo tcpdump -i lo > GridExperiment/results/connect.pcap &
 PCAP=$!
 python GridExperiment/python/connect_nodes.py | tee GridExperiment/results/connect_nodes_output.txt
 sudo kill -9 "$STATS"
@@ -28,7 +30,7 @@ sudo kill -9 "$PCAP"
 #TRAIN ON DATA
 while true; do sudo docker stats --no-stream | ts '[%H:%M:%S]' | tee --append GridExperiment/results/train_stats.txt; sleep 0.5; done &
 STATS=$!
-sudo tcpdump -i lo -vv > GridExperiment/results/train.pcap &
+sudo tcpdump -i lo  > GridExperiment/results/train.pcap &
 PCAP=$!
 python GridExperiment/python/learn_from_grid.py | tee --append GridExperiment/results/learn_from_grid_output.txt
 sudo kill -9 "$STATS"
