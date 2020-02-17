@@ -13,7 +13,7 @@ source run_entire_experiment.sh
 ![CPU Usage](results/graphs/CPU_usage.png)
 ![memory Usage](results/graphs/memory_usage.png)
 ![BlockO Usage](results/graphs/BlockO_usage.png)
-![BlockI Usage](results/graphs/BlockIN_usage.png)
+![BlockI Usage](results/graphs/BlockIN.png)
 
 ### TODO
 
