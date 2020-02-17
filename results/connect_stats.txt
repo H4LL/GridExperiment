@@ -58,3 +58,63 @@
 [01:00:21] e7f26bbceb59        pygrid_alice_1      63.08%              718.4MiB / 4.851GiB   14.46%              0B / 0B             135kB / 44.4MB      4
 [01:00:21] 062963070af5        pygrid_bob_1        3.13%               233.1MiB / 4.851GiB   4.69%               0B / 0B             0B / 38.2MB         4
 [01:00:21] d4d8c1880028        pygrid_gateway_1    1.70%               51.28MiB / 4.851GiB   1.03%               0B / 0B             1.91MB / 152kB      2
+[07:09:00] CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+[07:09:00] 9e20adaa1669        pygrid_bill_1       0.02%               104.7MiB / 4.851GiB   2.11%               0B / 0B             0B / 115kB          4
+[07:09:00] f353a0840436        pygrid_james_1      0.02%               104.7MiB / 4.851GiB   2.11%               0B / 0B             0B / 115kB          4
+[07:09:00] f3aa11a87925        pygrid_alice_1      0.03%               104.9MiB / 4.851GiB   2.11%               0B / 0B             250kB / 115kB       4
+[07:09:00] da8785a4e074        pygrid_bob_1        0.02%               104.7MiB / 4.851GiB   2.11%               0B / 0B             0B / 115kB          4
+[07:09:00] b3fb31b827d6        pygrid_gateway_1    0.01%               51.04MiB / 4.851GiB   1.03%               0B / 0B             1.91MB / 152kB      2
+[07:09:03] CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+[07:09:03] 9e20adaa1669        pygrid_bill_1       0.02%               104.7MiB / 4.851GiB   2.11%               0B / 0B             0B / 115kB          4
+[07:09:03] f353a0840436        pygrid_james_1      0.02%               104.7MiB / 4.851GiB   2.11%               0B / 0B             0B / 115kB          4
+[07:09:03] f3aa11a87925        pygrid_alice_1      0.02%               104.9MiB / 4.851GiB   2.11%               0B / 0B             250kB / 115kB       4
+[07:09:03] da8785a4e074        pygrid_bob_1        0.04%               104.8MiB / 4.851GiB   2.11%               0B / 0B             0B / 115kB          4
+[07:09:03] b3fb31b827d6        pygrid_gateway_1    0.01%               51.04MiB / 4.851GiB   1.03%               0B / 0B             1.91MB / 152kB      2
+[07:09:06] CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+[07:09:06] 9e20adaa1669        pygrid_bill_1       0.03%               104.7MiB / 4.851GiB   2.11%               0B / 0B             0B / 115kB          4
+[07:09:06] f353a0840436        pygrid_james_1      0.03%               104.7MiB / 4.851GiB   2.11%               0B / 0B             0B / 115kB          4
+[07:09:06] f3aa11a87925        pygrid_alice_1      0.03%               104.9MiB / 4.851GiB   2.11%               0B / 0B             250kB / 115kB       4
+[07:09:06] da8785a4e074        pygrid_bob_1        12.59%              113.5MiB / 4.851GiB   2.28%               0B / 0B             0B / 115kB          4
+[07:09:06] b3fb31b827d6        pygrid_gateway_1    0.01%               51.04MiB / 4.851GiB   1.03%               0B / 0B             1.91MB / 152kB      2
+[07:09:09] CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+[07:09:09] 9e20adaa1669        pygrid_bill_1       0.02%               104.7MiB / 4.851GiB   2.11%               0B / 0B             0B / 115kB          4
+[07:09:09] f353a0840436        pygrid_james_1      0.02%               104.7MiB / 4.851GiB   2.11%               0B / 0B             0B / 115kB          4
+[07:09:09] f3aa11a87925        pygrid_alice_1      0.02%               169.7MiB / 4.851GiB   3.42%               0B / 0B             250kB / 19.4MB      4
+[07:09:09] da8785a4e074        pygrid_bob_1        0.02%               169.6MiB / 4.851GiB   3.41%               0B / 0B             0B / 19.4MB         4
+[07:09:09] b3fb31b827d6        pygrid_gateway_1    0.01%               51.04MiB / 4.851GiB   1.03%               0B / 0B             1.91MB / 152kB      2
+[07:09:12] CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+[07:09:12] 9e20adaa1669        pygrid_bill_1       0.03%               104.7MiB / 4.851GiB   2.11%               0B / 0B             0B / 115kB          4
+[07:09:12] f353a0840436        pygrid_james_1      0.03%               104.7MiB / 4.851GiB   2.11%               0B / 0B             0B / 115kB          4
+[07:09:12] f3aa11a87925        pygrid_alice_1      3.66%               169.7MiB / 4.851GiB   3.42%               0B / 0B             250kB / 19.7MB      4
+[07:09:12] da8785a4e074        pygrid_bob_1        4.33%               169.6MiB / 4.851GiB   3.41%               0B / 0B             0B / 19.7MB         4
+[07:09:12] b3fb31b827d6        pygrid_gateway_1    0.01%               51.04MiB / 4.851GiB   1.03%               0B / 0B             1.91MB / 152kB      2
+[07:09:15] CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+[07:09:15] 9e20adaa1669        pygrid_bill_1       0.03%               104.7MiB / 4.851GiB   2.11%               0B / 0B             0B / 115kB          4
+[07:09:15] f353a0840436        pygrid_james_1      0.02%               104.7MiB / 4.851GiB   2.11%               0B / 0B             0B / 115kB          4
+[07:09:15] f3aa11a87925        pygrid_alice_1      16.22%              169.9MiB / 4.851GiB   3.42%               0B / 0B             250kB / 23.8MB      4
+[07:09:15] da8785a4e074        pygrid_bob_1        14.57%              169.6MiB / 4.851GiB   3.41%               0B / 0B             0B / 23.8MB         4
+[07:09:15] b3fb31b827d6        pygrid_gateway_1    0.01%               51.04MiB / 4.851GiB   1.03%               0B / 0B             1.91MB / 152kB      2
+[07:09:18] CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+[07:09:18] 9e20adaa1669        pygrid_bill_1       0.02%               104.7MiB / 4.851GiB   2.11%               0B / 0B             0B / 115kB          4
+[07:09:18] f353a0840436        pygrid_james_1      0.02%               104.7MiB / 4.851GiB   2.11%               0B / 0B             0B / 115kB          4
+[07:09:18] f3aa11a87925        pygrid_alice_1      15.06%              183.2MiB / 4.851GiB   3.69%               0B / 0B             250kB / 27.8MB      4
+[07:09:18] da8785a4e074        pygrid_bob_1        14.40%              184.5MiB / 4.851GiB   3.71%               0B / 0B             0B / 27.8MB         4
+[07:09:18] b3fb31b827d6        pygrid_gateway_1    0.01%               51.04MiB / 4.851GiB   1.03%               0B / 0B             1.91MB / 152kB      2
+[07:09:21] CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+[07:09:21] 9e20adaa1669        pygrid_bill_1       0.03%               104.7MiB / 4.851GiB   2.11%               0B / 0B             0B / 115kB          4
+[07:09:21] f353a0840436        pygrid_james_1      0.02%               104.7MiB / 4.851GiB   2.11%               0B / 0B             0B / 115kB          4
+[07:09:21] f3aa11a87925        pygrid_alice_1      18.29%              202.7MiB / 4.851GiB   4.08%               0B / 0B             250kB / 31.9MB      4
+[07:09:21] da8785a4e074        pygrid_bob_1        14.62%              204MiB / 4.851GiB     4.11%               0B / 0B             0B / 31.9MB         4
+[07:09:21] b3fb31b827d6        pygrid_gateway_1    0.01%               51.04MiB / 4.851GiB   1.03%               0B / 0B             1.91MB / 152kB      2
+[07:09:24] CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+[07:09:24] 9e20adaa1669        pygrid_bill_1       0.02%               104.7MiB / 4.851GiB   2.11%               0B / 0B             0B / 115kB          4
+[07:09:24] f353a0840436        pygrid_james_1      0.02%               104.7MiB / 4.851GiB   2.11%               0B / 0B             0B / 115kB          4
+[07:09:24] f3aa11a87925        pygrid_alice_1      18.42%              222.2MiB / 4.851GiB   4.47%               0B / 0B             250kB / 36MB        4
+[07:09:24] da8785a4e074        pygrid_bob_1        14.59%              223.5MiB / 4.851GiB   4.50%               0B / 0B             0B / 36MB           4
+[07:09:24] b3fb31b827d6        pygrid_gateway_1    0.01%               51.04MiB / 4.851GiB   1.03%               0B / 0B             1.91MB / 152kB      2
+[07:09:27] CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+[07:09:27] 9e20adaa1669        pygrid_bill_1       0.37%               104.8MiB / 4.851GiB   2.11%               0B / 0B             0B / 115kB          4
+[07:09:27] f353a0840436        pygrid_james_1      0.35%               104.8MiB / 4.851GiB   2.11%               0B / 0B             0B / 115kB          4
+[07:09:27] f3aa11a87925        pygrid_alice_1      9.89%               233.3MiB / 4.851GiB   4.70%               0B / 0B             250kB / 38.5MB      4
+[07:09:27] da8785a4e074        pygrid_bob_1        3.22%               234.6MiB / 4.851GiB   4.72%               0B / 0B             0B / 38.2MB         4
+[07:09:27] b3fb31b827d6        pygrid_gateway_1    1.86%               51.3MiB / 4.851GiB    1.03%               0B / 0B             1.91MB / 152kB      2

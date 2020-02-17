@@ -8,18 +8,18 @@ Downloading http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz to ./data
 Extracting ./dataset/MNIST/raw/t10k-labels-idx1-ubyte.gz to ./dataset/MNIST/raw
 Processing...
 Done!
-X tensor pointers:  (Wrapper)>[PointerTensor | me:66757019702 -> Bob:37651311711]
+X tensor pointers:  (Wrapper)>[PointerTensor | me:9515260918 -> Bob:8737203250]
 	Tags: #mnist #X #dataset 
 	Shape: torch.Size([5000, 1, 28, 28])
-	Description: The input datapoints to the MNIST dataset.... (Wrapper)>[PointerTensor | me:31847016258 -> Alice:11307948052]
+	Description: The input datapoints to the MNIST dataset.... (Wrapper)>[PointerTensor | me:10824716164 -> Alice:12661700182]
 	Tags: #mnist #X #dataset 
 	Shape: torch.Size([5000, 1, 28, 28])
 	Description: The input datapoints to the MNIST dataset....
-Y tensor pointers:  (Wrapper)>[PointerTensor | me:93524535335 -> Bob:94958127999]
-	Tags: #mnist #Y #dataset 
+Y tensor pointers:  (Wrapper)>[PointerTensor | me:6850087806 -> Bob:23126663653]
+	Tags: #mnist #dataset #Y 
 	Shape: torch.Size([5000])
-	Description: The input labels to the MNIST dataset.... (Wrapper)>[PointerTensor | me:67701629928 -> Alice:5574700375]
-	Tags: #mnist #Y #dataset 
+	Description: The input labels to the MNIST dataset.... (Wrapper)>[PointerTensor | me:92432050714 -> Alice:56206166074]
+	Tags: #mnist #dataset #Y 
 	Shape: torch.Size([5000])
 	Description: The input labels to the MNIST dataset....
 Downloading http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz to ./data/MNIST/raw/train-images-idx3-ubyte.gz
