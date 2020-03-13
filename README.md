@@ -25,10 +25,10 @@ This should work for any training scenario. Just put your data distribution and 
 ![BlockI Usage](results/graphs/BlockIN.png)
 
 # Network Input
-![Bandwith Out](results/graphs/NetO_usage.png)
+![Bandwith Out](results/graphs/NetI_usage.png)
 
 # Network Output
-![Bandwidth Input](results/graphs/NetI_usage.png)
+![Bandwidth Input](results/graphs/NetO_usage.png)
 
 ### TODO
 
