@@ -1,5 +1,5 @@
 #!/bin/bash
-cd ~/PyGrid
+cd ~
 mkdir GridExperiment/results
 
 #SET UP SUBNET

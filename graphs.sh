@@ -1,6 +1,6 @@
 #!/ bin / bash
 
-cd ~/PyGrid/GridExperiment
+cd ~/GridExperiment
 cat results/connect_stats.txt results/train_stats.txt > results/connect_stats.csv
 sed -i -e 's/] /],/g' results/connect_stats.csv
 sed -i -e 's/               /,/g' results/connect_stats.csv
@@ -15,8 +15,6 @@ sed -i -e 's/,,/,/g' results/connect_stats.csv
 sed -i -e 's/,,/,/g' results/connect_stats.csv
 sed -i -e 's/%//g' results/connect_stats.csv
 sed -i -e 's/ //g' results/connect_stats.csv
-
-
 
 mkdir results/graphs
 cp results/connect_stats.csv results/graphs/connect_stats.csv
@@ -83,3 +81,5 @@ python python/plot-blockO.py
 python python/plot-blockI.py
 python python/plot-netO.py
 python python/plot-netI.py
+
+cd ~

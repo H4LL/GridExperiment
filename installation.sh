@@ -1,16 +1,16 @@
 #!/bin/bash
 
 #Get Updates
-sudo apt update
+sudo apt update -y
 
 #Get GCC
-sudo apt install gcc
-sudo apt install moreutils
-sudo apt install curl
+sudo apt install gcc -y
+sudo apt install moreutils -y
+sudo apt install curl -y
 
 #Install Docker
 sudo snap install docker
-sudo apt install docker-compose
+sudo apt install docker-compose -y
 
 #Install Anaconda
 cd /tmp
@@ -44,4 +44,4 @@ cd PyGrid
 sudo docker build -t openmined/grid-n ./app/websocket/
 sudo docker build -t openmined/grid-gateway ./gateway/
 
-git clone https://github.com/H4LL/GridExperiment.git
+cd ~
