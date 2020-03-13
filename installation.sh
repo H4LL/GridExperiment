@@ -41,7 +41,7 @@ pip install .
 cd ~
 git clone https://github.com/OpenMined/PyGrid.git
 cd PyGrid
-sudo docker build -t openmined/grid-n ./app/websocket/
+sudo docker build -t openmined/grid-node ./app/websocket/
 sudo docker build -t openmined/grid-gateway ./gateway/
 
 cd ~
