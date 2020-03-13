@@ -1,0 +1,120 @@
+[20:50:04] CONTAINER ID        NAME                       CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+[20:50:04] 475f715a2366        gridexperiment_james_1     0.02%               95MiB / 8.301GiB      1.12%               3.4kB / 819B        0B / 0B             3
+[20:50:04] 71105f46cf57        gridexperiment_bob_1       9.51%               94.95MiB / 8.301GiB   1.12%               3.4kB / 817B        0B / 0B             3
+[20:50:04] 38ced2022e89        gridexperiment_alice_1     7.17%               94.98MiB / 8.301GiB   1.12%               3.4kB / 819B        0B / 0B             3
+[20:50:04] 7ef9fc4f5828        gridexperiment_bill_1      25.75%              95.05MiB / 8.301GiB   1.12%               3.36kB / 818B       0B / 0B             3
+[20:50:04] e6c50557e217        gridexperiment_gateway_1   0.02%               127.5MiB / 8.301GiB   1.50%               6.37kB / 2.57kB     0B / 0B             3
+[20:50:04] 90b723c5e2ad        gridexperiment_redis_1     0.08%               2.25MiB / 8.301GiB    0.03%               3.13kB / 0B         0B / 0B             4
+[20:50:07] CONTAINER ID        NAME                       CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+[20:50:07] 475f715a2366        gridexperiment_james_1     0.02%               95MiB / 8.301GiB      1.12%               3.69kB / 819B       0B / 0B             3
+[20:50:07] 71105f46cf57        gridexperiment_bob_1       63.68%              159.4MiB / 8.301GiB   1.88%               4.59MB / 11.7kB     0B / 0B             3
+[20:50:07] 38ced2022e89        gridexperiment_alice_1     12.35%              103.8MiB / 8.301GiB   1.22%               4.57MB / 10.4kB     0B / 0B             3
+[20:50:07] 7ef9fc4f5828        gridexperiment_bill_1      0.02%               94.97MiB / 8.301GiB   1.12%               3.69kB / 860B       0B / 0B             3
+[20:50:07] e6c50557e217        gridexperiment_gateway_1   0.03%               127.5MiB / 8.301GiB   1.50%               6.54kB / 2.65kB     0B / 0B             3
+[20:50:07] 90b723c5e2ad        gridexperiment_redis_1     0.11%               2.25MiB / 8.301GiB    0.03%               3.29kB / 0B         0B / 0B             4
+[20:50:10] CONTAINER ID        NAME                       CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+[20:50:10] 475f715a2366        gridexperiment_james_1     0.02%               95MiB / 8.301GiB      1.12%               3.76kB / 819B       0B / 0B             3
+[20:50:10] 71105f46cf57        gridexperiment_bob_1       79.17%              1.039GiB / 8.301GiB   12.51%              6.35MB / 23.8kB     0B / 0B             5
+[20:50:10] 38ced2022e89        gridexperiment_alice_1     0.02%               159.5MiB / 8.301GiB   1.88%               4.6MB / 10.8kB      0B / 0B             3
+[20:50:10] 7ef9fc4f5828        gridexperiment_bill_1      0.02%               94.97MiB / 8.301GiB   1.12%               3.69kB / 860B       0B / 0B             3
+[20:50:10] e6c50557e217        gridexperiment_gateway_1   0.02%               127.5MiB / 8.301GiB   1.50%               6.81kB / 2.65kB     0B / 0B             3
+[20:50:10] 90b723c5e2ad        gridexperiment_redis_1     0.09%               2.25MiB / 8.301GiB    0.03%               3.29kB / 0B         0B / 0B             4
+[20:50:13] CONTAINER ID        NAME                       CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+[20:50:13] 475f715a2366        gridexperiment_james_1     0.02%               95MiB / 8.301GiB      1.12%               3.96kB / 819B       0B / 0B             3
+[20:50:13] 71105f46cf57        gridexperiment_bob_1       0.27%               270.9MiB / 8.301GiB   3.19%               6.36MB / 3.43MB     0B / 0B             5
+[20:50:13] 38ced2022e89        gridexperiment_alice_1     63.26%              507.5MiB / 8.301GiB   5.97%               8.01MB / 21.9kB     0B / 0B             3
+[20:50:13] 7ef9fc4f5828        gridexperiment_bill_1      0.02%               94.97MiB / 8.301GiB   1.12%               3.76kB / 860B       0B / 0B             3
+[20:50:13] e6c50557e217        gridexperiment_gateway_1   0.02%               127.5MiB / 8.301GiB   1.50%               6.81kB / 2.65kB     0B / 0B             3
+[20:50:13] 90b723c5e2ad        gridexperiment_redis_1     0.08%               2.25MiB / 8.301GiB    0.03%               3.49kB / 0B         0B / 0B             4
+[20:50:16] CONTAINER ID        NAME                       CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+[20:50:16] 475f715a2366        gridexperiment_james_1     0.03%               94.98MiB / 8.301GiB   1.12%               3.96kB / 819B       0B / 0B             3
+[20:50:16] 71105f46cf57        gridexperiment_bob_1       0.02%               270.9MiB / 8.301GiB   3.19%               6.36MB / 3.43MB     0B / 0B             5
+[20:50:16] 38ced2022e89        gridexperiment_alice_1     48.40%              1.074GiB / 8.301GiB   12.94%              8.01MB / 25.4kB     5.4MB / 0B          5
+[20:50:16] 7ef9fc4f5828        gridexperiment_bill_1      0.03%               94.93MiB / 8.301GiB   1.12%               3.96kB / 860B       0B / 0B             3
+[20:50:16] e6c50557e217        gridexperiment_gateway_1   0.02%               127.5MiB / 8.301GiB   1.50%               6.81kB / 2.65kB     0B / 0B             3
+[20:50:16] 90b723c5e2ad        gridexperiment_redis_1     0.08%               2.25MiB / 8.301GiB    0.03%               3.49kB / 0B         0B / 0B             4
+[20:50:19] CONTAINER ID        NAME                       CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+[20:50:19] 475f715a2366        gridexperiment_james_1     0.02%               94.98MiB / 8.301GiB   1.12%               3.96kB / 819B       0B / 0B             3
+[20:50:19] 71105f46cf57        gridexperiment_bob_1       82.07%              787.9MiB / 8.301GiB   9.27%               9.78MB / 3.44MB     2.31MB / 0B         5
+[20:50:19] 38ced2022e89        gridexperiment_alice_1     0.03%               279.8MiB / 8.301GiB   3.29%               8.02MB / 3.44MB     7.7MB / 0B          5
+[20:50:19] 7ef9fc4f5828        gridexperiment_bill_1      0.02%               94.93MiB / 8.301GiB   1.12%               3.96kB / 860B       0B / 0B             3
+[20:50:19] e6c50557e217        gridexperiment_gateway_1   0.02%               127.5MiB / 8.301GiB   1.50%               6.81kB / 2.65kB     0B / 0B             3
+[20:50:19] 90b723c5e2ad        gridexperiment_redis_1     0.08%               2.25MiB / 8.301GiB    0.03%               3.49kB / 0B         0B / 0B             4
+[20:50:22] CONTAINER ID        NAME                       CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+[20:50:22] 475f715a2366        gridexperiment_james_1     0.12%               94.79MiB / 8.301GiB   1.12%               3.96kB / 819B       0B / 0B             3
+[20:50:22] 71105f46cf57        gridexperiment_bob_1       82.18%              934.6MiB / 8.301GiB   10.99%              9.78MB / 3.45MB     8.22MB / 0B         5
+[20:50:22] 38ced2022e89        gridexperiment_alice_1     0.02%               279.6MiB / 8.301GiB   3.29%               8.02MB / 3.44MB     7.7MB / 0B          5
+[20:50:22] 7ef9fc4f5828        gridexperiment_bill_1      0.02%               94.71MiB / 8.301GiB   1.11%               3.96kB / 860B       0B / 0B             3
+[20:50:22] e6c50557e217        gridexperiment_gateway_1   0.02%               127.3MiB / 8.301GiB   1.50%               6.81kB / 2.65kB     0B / 0B             3
+[20:50:22] 90b723c5e2ad        gridexperiment_redis_1     0.08%               2.246MiB / 8.301GiB   0.03%               3.56kB / 0B         0B / 0B             4
+[20:50:26] CONTAINER ID        NAME                       CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+[20:50:26] 475f715a2366        gridexperiment_james_1     0.02%               94.79MiB / 8.301GiB   1.12%               4.03kB / 819B       0B / 0B             3
+[20:50:26] 71105f46cf57        gridexperiment_bob_1       0.02%               330.1MiB / 8.301GiB   3.88%               9.79MB / 6.85MB     8.71MB / 0B         5
+[20:50:26] 38ced2022e89        gridexperiment_alice_1     89.76%              1.147GiB / 8.301GiB   13.81%              11.4MB / 3.45MB     9.22MB / 0B         5
+[20:50:26] 7ef9fc4f5828        gridexperiment_bill_1      0.02%               94.71MiB / 8.301GiB   1.11%               3.96kB / 860B       0B / 0B             3
+[20:50:26] e6c50557e217        gridexperiment_gateway_1   0.02%               127.3MiB / 8.301GiB   1.50%               6.88kB / 2.65kB     0B / 0B             3
+[20:50:26] 90b723c5e2ad        gridexperiment_redis_1     0.09%               2.246MiB / 8.301GiB   0.03%               3.56kB / 0B         0B / 0B             4
+[20:50:29] CONTAINER ID        NAME                       CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+[20:50:29] 475f715a2366        gridexperiment_james_1     0.02%               94.79MiB / 8.301GiB   1.12%               4.23kB / 819B       0B / 0B             3
+[20:50:29] 71105f46cf57        gridexperiment_bob_1       91.66%              909.6MiB / 8.301GiB   10.70%              13.2MB / 6.86MB     8.71MB / 0B         5
+[20:50:29] 38ced2022e89        gridexperiment_alice_1     0.02%               329.4MiB / 8.301GiB   3.88%               11.4MB / 6.86MB     9.22MB / 0B         5
+[20:50:29] 7ef9fc4f5828        gridexperiment_bill_1      0.02%               94.71MiB / 8.301GiB   1.11%               4.03kB / 860B       0B / 0B             3
+[20:50:29] e6c50557e217        gridexperiment_gateway_1   0.02%               127.3MiB / 8.301GiB   1.50%               7.08kB / 2.65kB     0B / 0B             3
+[20:50:29] 90b723c5e2ad        gridexperiment_redis_1     0.09%               2.246MiB / 8.301GiB   0.03%               3.76kB / 0B         0B / 0B             4
+[20:50:32] CONTAINER ID        NAME                       CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+[20:50:32] 475f715a2366        gridexperiment_james_1     0.03%               94.79MiB / 8.301GiB   1.12%               4.23kB / 819B       0B / 0B             3
+[20:50:32] 71105f46cf57        gridexperiment_bob_1       78.35%              814.7MiB / 8.301GiB   9.58%               13.2MB / 6.87MB     8.71MB / 0B         5
+[20:50:32] 38ced2022e89        gridexperiment_alice_1     0.04%               329.4MiB / 8.301GiB   3.88%               11.4MB / 6.86MB     9.22MB / 0B         5
+[20:50:32] 7ef9fc4f5828        gridexperiment_bill_1      0.02%               94.71MiB / 8.301GiB   1.11%               4.23kB / 860B       0B / 0B             3
+[20:50:32] e6c50557e217        gridexperiment_gateway_1   0.03%               127.3MiB / 8.301GiB   1.50%               7.08kB / 2.65kB     0B / 0B             3
+[20:50:32] 90b723c5e2ad        gridexperiment_redis_1     0.09%               2.246MiB / 8.301GiB   0.03%               3.76kB / 0B         0B / 0B             4
+[20:50:35] CONTAINER ID        NAME                       CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+[20:50:35] 475f715a2366        gridexperiment_james_1     0.03%               94.79MiB / 8.301GiB   1.12%               4.23kB / 819B       0B / 0B             3
+[20:50:35] 71105f46cf57        gridexperiment_bob_1       0.03%               345.4MiB / 8.301GiB   4.06%               13.2MB / 10.3MB     8.71MB / 0B         5
+[20:50:35] 38ced2022e89        gridexperiment_alice_1     70.18%              985.4MiB / 8.301GiB   11.59%              14.9MB / 6.87MB     9.22MB / 0B         5
+[20:50:35] 7ef9fc4f5828        gridexperiment_bill_1      0.02%               94.71MiB / 8.301GiB   1.11%               4.23kB / 860B       0B / 0B             3
+[20:50:35] e6c50557e217        gridexperiment_gateway_1   0.02%               127.3MiB / 8.301GiB   1.50%               7.08kB / 2.65kB     0B / 0B             3
+[20:50:35] 90b723c5e2ad        gridexperiment_redis_1     0.09%               2.246MiB / 8.301GiB   0.03%               3.76kB / 0B         0B / 0B             4
+[20:50:38] CONTAINER ID        NAME                       CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+[20:50:38] 475f715a2366        gridexperiment_james_1     0.02%               94.38MiB / 8.301GiB   1.11%               4.23kB / 819B       0B / 0B             3
+[20:50:38] 71105f46cf57        gridexperiment_bob_1       1.41%               345.3MiB / 8.301GiB   4.06%               13.4MB / 10.3MB     8.71MB / 0B         5
+[20:50:38] 38ced2022e89        gridexperiment_alice_1     86.12%              344.7MiB / 8.301GiB   4.05%               14.9MB / 10.3MB     9.22MB / 0B         5
+[20:50:38] 7ef9fc4f5828        gridexperiment_bill_1      0.03%               94.31MiB / 8.301GiB   1.11%               4.23kB / 860B       0B / 0B             3
+[20:50:38] e6c50557e217        gridexperiment_gateway_1   0.02%               126.8MiB / 8.301GiB   1.49%               7.08kB / 2.65kB     0B / 0B             3
+[20:50:38] 90b723c5e2ad        gridexperiment_redis_1     0.09%               2.238MiB / 8.301GiB   0.03%               3.76kB / 0B         0B / 0B             4
+[20:50:41] CONTAINER ID        NAME                       CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+[20:50:41] 475f715a2366        gridexperiment_james_1     0.02%               94.38MiB / 8.301GiB   1.11%               4.23kB / 819B       0B / 0B             3
+[20:50:41] 71105f46cf57        gridexperiment_bob_1       90.93%              1.173GiB / 8.301GiB   14.14%              16.6MB / 10.3MB     8.71MB / 0B         5
+[20:50:41] 38ced2022e89        gridexperiment_alice_1     0.02%               344.6MiB / 8.301GiB   4.05%               14.9MB / 10.3MB     9.22MB / 0B         5
+[20:50:41] 7ef9fc4f5828        gridexperiment_bill_1      0.02%               94.31MiB / 8.301GiB   1.11%               4.23kB / 860B       0B / 0B             3
+[20:50:41] e6c50557e217        gridexperiment_gateway_1   0.03%               126.8MiB / 8.301GiB   1.49%               7.08kB / 2.65kB     0B / 0B             3
+[20:50:41] 90b723c5e2ad        gridexperiment_redis_1     0.08%               2.238MiB / 8.301GiB   0.03%               3.76kB / 0B         0B / 0B             4
+[20:50:44] CONTAINER ID        NAME                       CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+[20:50:44] 475f715a2366        gridexperiment_james_1     0.02%               94.38MiB / 8.301GiB   1.11%               4.23kB / 819B       0B / 0B             3
+[20:50:44] 71105f46cf57        gridexperiment_bob_1       0.02%               345.3MiB / 8.301GiB   4.06%               16.6MB / 13.7MB     8.71MB / 0B         5
+[20:50:44] 38ced2022e89        gridexperiment_alice_1     92.34%              956.6MiB / 8.301GiB   11.25%              18.3MB / 10.3MB     9.22MB / 0B         5
+[20:50:44] 7ef9fc4f5828        gridexperiment_bill_1      0.03%               94.31MiB / 8.301GiB   1.11%               4.23kB / 860B       0B / 0B             3
+[20:50:44] e6c50557e217        gridexperiment_gateway_1   0.02%               126.8MiB / 8.301GiB   1.49%               7.08kB / 2.65kB     0B / 0B             3
+[20:50:44] 90b723c5e2ad        gridexperiment_redis_1     0.09%               2.238MiB / 8.301GiB   0.03%               3.76kB / 0B         0B / 0B             4
+[20:50:47] CONTAINER ID        NAME                       CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+[20:50:47] 475f715a2366        gridexperiment_james_1     0.02%               94.38MiB / 8.301GiB   1.11%               4.23kB / 819B       0B / 0B             3
+[20:50:47] 71105f46cf57        gridexperiment_bob_1       45.06%              345.5MiB / 8.301GiB   4.06%               20MB / 13.7MB       8.71MB / 0B         5
+[20:50:47] 38ced2022e89        gridexperiment_alice_1     41.99%              344.6MiB / 8.301GiB   4.05%               18.3MB / 13.7MB     9.22MB / 0B         5
+[20:50:47] 7ef9fc4f5828        gridexperiment_bill_1      0.02%               94.31MiB / 8.301GiB   1.11%               4.23kB / 860B       0B / 0B             3
+[20:50:47] e6c50557e217        gridexperiment_gateway_1   0.02%               126.8MiB / 8.301GiB   1.49%               7.08kB / 2.65kB     0B / 0B             3
+[20:50:47] 90b723c5e2ad        gridexperiment_redis_1     0.08%               2.238MiB / 8.301GiB   0.03%               3.76kB / 0B         0B / 0B             4
+[20:50:50] CONTAINER ID        NAME                       CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+[20:50:50] 475f715a2366        gridexperiment_james_1     0.02%               94.38MiB / 8.301GiB   1.11%               4.23kB / 819B       0B / 0B             3
+[20:50:50] 71105f46cf57        gridexperiment_bob_1       94.59%              949.6MiB / 8.301GiB   11.17%              20.1MB / 13.7MB     8.71MB / 0B         5
+[20:50:50] 38ced2022e89        gridexperiment_alice_1     0.02%               344.6MiB / 8.301GiB   4.05%               18.3MB / 13.7MB     9.22MB / 0B         5
+[20:50:50] 7ef9fc4f5828        gridexperiment_bill_1      0.02%               94.31MiB / 8.301GiB   1.11%               4.23kB / 860B       0B / 0B             3
+[20:50:50] e6c50557e217        gridexperiment_gateway_1   0.02%               126.8MiB / 8.301GiB   1.49%               7.08kB / 2.65kB     0B / 0B             3
+[20:50:50] 90b723c5e2ad        gridexperiment_redis_1     0.08%               2.238MiB / 8.301GiB   0.03%               3.76kB / 0B         0B / 0B             4
+[20:50:53] CONTAINER ID        NAME                       CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+[20:50:53] 475f715a2366        gridexperiment_james_1     0.02%               94.38MiB / 8.301GiB   1.11%               4.23kB / 819B       0B / 0B             3
+[20:50:53] 71105f46cf57        gridexperiment_bob_1       0.02%               345.3MiB / 8.301GiB   4.06%               20.1MB / 17.1MB     8.71MB / 0B         5
+[20:50:53] 38ced2022e89        gridexperiment_alice_1     94.02%              1.178GiB / 8.301GiB   14.19%              21.7MB / 13.7MB     9.22MB / 0B         5
+[20:50:53] 7ef9fc4f5828        gridexperiment_bill_1      0.02%               94.31MiB / 8.301GiB   1.11%               4.23kB / 860B       0B / 0B             3
+[20:50:53] e6c50557e217        gridexperiment_gateway_1   0.02%               126.8MiB / 8.301GiB   1.49%               7.08kB / 2.65kB     0B / 0B             3
+[20:50:53] 90b723c5e2ad        gridexperiment_redis_1     0.09%               2.238MiB / 8.301GiB   0.03%               3.76kB / 0B         0B / 0B             4
+[20:50:56] CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT   MEM %               NET I/O             BLOCK I/O           PIDS

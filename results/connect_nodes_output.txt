@@ -1,0 +1,7 @@
+X tensor pointers:  [(Wrapper)>[PointerTensor | me:71576182402 -> Bob:97128014446], (Wrapper)>[PointerTensor | me:56005013729 -> Alice:87354271441]]
+Y tensor pointers:  [(Wrapper)>[PointerTensor | me:47244730508 -> Bob:50486883103], (Wrapper)>[PointerTensor | me:25226399573 -> Alice:46193303228]]
+Epoch:  0        Loss:  tensor(2.2948, requires_grad=True)
+Epoch:  1        Loss:  tensor(2.2883, requires_grad=True)
+Epoch:  2        Loss:  tensor(2.2819, requires_grad=True)
+Epoch:  3        Loss:  tensor(2.2753, requires_grad=True)
+Epoch:  4        Loss:  tensor(2.2687, requires_grad=True)
