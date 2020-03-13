@@ -12,22 +12,22 @@ This should work for any training scenario. Just put your data distribution and 
 
 ## Example Graphs
 
-#CPU Usage
+# CPU Usage
 ![CPU Usage](results/graphs/CPU_usage.png)
 
-#Memory Usage
+# Memory Usage
 ![memory Usage](results/graphs/memory_usage.png)
 
-#Block Input
+# Block Input
 ![BlockO Usage](results/graphs/BlockO_usage.png)
 
-#Block Output
+# Block Output
 ![BlockI Usage](results/graphs/BlockIN.png)
 
-#Network Input
+# Network Input
 ![Bandwith Out](results/graphs/NetO_usage.png)
 
-#Network Output
+# Network Output
 ![Bandwidth Input](results/graphs/NetI_usage.png)
 
 ### TODO
