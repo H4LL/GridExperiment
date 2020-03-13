@@ -18,10 +18,10 @@ This should work for any training scenario. Just put your data distribution and 
 # Memory Usage
 ![memory Usage](results/graphs/memory_usage.png)
 
-# Block Input
+# Block Output
 ![BlockO Usage](results/graphs/BlockO_usage.png)
 
-# Block Output
+# Block Input
 ![BlockI Usage](results/graphs/BlockIN.png)
 
 # Network Input
