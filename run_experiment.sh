@@ -3,7 +3,7 @@ cd ~
 mkdir GridExperiment/results
 
 #SET UP SUBNET
-sudo docker-compose -f docker-compose-experiment.yml up &
+sudo docker-compose -f GridExperiment/docker-compose-experiment.yml up &
 sleep 10
 
 #DISTRIBUTE DATA
