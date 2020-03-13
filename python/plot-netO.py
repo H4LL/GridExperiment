@@ -19,7 +19,7 @@ while (i < (len(gridexperiment_james_1)+1)):
 def convkb(text):
     try:
         if text[-2:]=='kB':
-            return text[:-2]
+            return float(text[:-2])
         elif text[-2:]=='MB':
             return float(text[:-2])*1024
         elif text[-1:]=='B':
