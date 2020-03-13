@@ -1,5 +1,5 @@
-import grid as gr
 import syft as sy
+from syft.workers.node_client import NodeClient
 import torch
 import pickle
 import time
@@ -7,20 +7,21 @@ import torchvision
 from torchvision import datasets, transforms
 import tqdm
 
+import torch as th
+import torch.nn as nn
+import torch.optim as optim
+import torch.nn.functional as F
+
 hook = sy.TorchHook(torch)
 
-
-#CONNECT TO NODES
 # Connect directly to grid nodes
 nodes = ["ws://localhost:3000/",
          "ws://localhost:3001/"]
 
 compute_nodes = []
 for node in nodes:
-    compute_nodes.append( gr.WebsocketGridClient(hook, node) )
+    compute_nodes.append( NodeClient(hook, node) )
 
-
-#LOAD DATASET
 N_SAMPLES = 10000
 MNIST_PATH = './dataset'
 
@@ -36,58 +37,75 @@ dataiter = iter(trainloader)
 
 images_train_mnist, labels_train_mnist = dataiter.next()
 
-#SPLIT DATASET
 datasets_mnist = torch.split(images_train_mnist, int(len(images_train_mnist) / len(compute_nodes)), dim=0 ) #tuple of chunks (dataset / number of nodes)
 labels_mnist = torch.split(labels_train_mnist, int(len(labels_train_mnist) / len(compute_nodes)), dim=0 )  #tuple of chunks (labels / number of nodes)
 
 
-#TAGGING TENSORS
-tag_img = []
-tag_label = []
+data = []
+label = []
 
 for i in range(len(compute_nodes)):
-    tag_img.append(datasets_mnist[i].tag("#X", "#mnist", "#dataset").describe("The input datapoints to the MNIST dataset."))
-    tag_label.append(labels_mnist[i].tag("#Y", "#mnist", "#dataset").describe("The input labels to the MNIST dataset."))
+    data.append(datasets_mnist[i].send(compute_nodes[i]))
+    label.append(labels_mnist[i].send(compute_nodes[i]))
+
+print("X tensor pointers: ", data)
+print("Y tensor pointers: ", label)
+
+hook = sy.TorchHook(th)
+class Net(nn.Module):
+    def __init__(self):
+        super(Net, self).__init__()
+        self.conv1 = nn.Conv2d(1, 20, 5, 1)
+        self.conv2 = nn.Conv2d(20, 50, 5, 1)
+        self.fc1 = nn.Linear(4*4*50, 500)
+        self.fc2 = nn.Linear(500, 10)
+
+    def forward(self, x):
+        x = F.relu(self.conv1(x))
+        x = F.max_pool2d(x, 2, 2)
+        x = F.relu(self.conv2(x))
+        x = F.max_pool2d(x, 2, 2)
+        x = x.view(-1, 4*4*50)
+        x = F.relu(self.fc1(x))
+        x = self.fc2(x)
+        return F.log_softmax(x, dim=1)
 
 
-#SEND OUT DATA
-# NOTE: For some reason, there is strange behavior when trying to send within a loop.
-# Ex : tag_x[i].send(compute_nodes[i])
-# When resolved, this should be updated.
+device = th.device("cuda:0" if th.cuda.is_available() else "cpu")
 
-shared_x1 = tag_img[0].send(compute_nodes[0], garbage_collect_data=False) # First chunk of dataset to Bob
-shared_x2 = tag_img[1].send(compute_nodes[1], garbage_collect_data=False) # Second chunk of dataset to Alice
+if(th.cuda.is_available()):
+    th.set_default_tensor_type(th.cuda.FloatTensor)
 
-shared_y1 = tag_label[0].send(compute_nodes[0], garbage_collect_data=False) # First chunk of labels to Bob
-shared_y2 = tag_label[1].send(compute_nodes[1], garbage_collect_data=False) # Second chunk of labels to Alice
+model = Net()
+optimizer = optim.SGD(model.parameters(), lr=0.01)
+criterion = nn.CrossEntropyLoss()
 
-print("X tensor pointers: ", shared_x1, shared_x2)
-print("Y tensor pointers: ", shared_y1, shared_y2)
 
-#LOAD DATASET
+def train(x, target, model, opt):
 
-N_SAMPLES = 500
-MNIST_PATH = './data'
+    #1) Zero our grads
+    model.zero_grad()
 
-transform = transforms.Compose([
-                              transforms.ToTensor(),
-                              transforms.Normalize((0.1307,), (0.3081,)),
-                              ])
+    #2) Make a prediction
+    pred = model(x)
 
-trainset = datasets.MNIST(MNIST_PATH, download=True, train=True, transform=transform)
-trainloader = torch.utils.data.DataLoader(trainset, batch_size=N_SAMPLES, shuffle=False)
+    #3) Figure out how much we missed by
+    criterion = nn.NLLLoss()
+    loss = criterion(pred, target)
 
-dataiter = iter(trainloader)
-n_workers = len(compute_nodes)
-device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+    #4) Backprop the loss on the end layer
+    loss.backward()
 
-for i, data in enumerate(dataiter):
-    images_train_mnist, labels_train_mnist = data[0].to(device), data[1].to(device)
-    images_train_mnist.tag("#X", "#mnist", "#dataset").describe("The input datapoints to the MNIST dataset.")
-    labels_train_mnist.tag("#Y", "#mnist", "#dataset").describe("The input labels to the MNIST dataset.")
-    images_train_mnist.send(compute_nodes[i % n_workers], garbage_collect_data=False)
-    labels_train_mnist.send(compute_nodes[i % n_workers], garbage_collect_data=False)
-    print("Sending data to:", compute_nodes[i % n_workers])
+    #6) Change the weights
+    opt.step()
 
-for i in range(len(compute_nodes)):
-    compute_nodes[i].close()
+    return loss
+
+epochs = 5
+
+for j in range(epochs):
+    for i in range(2):
+        model.send(compute_nodes[i])
+        loss = train(data[i], label[i], model, optimizer).get()
+        model.get()
+    print("Epoch: ",j,"       Loss: ",loss)
