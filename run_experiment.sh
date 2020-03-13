@@ -1,5 +1,6 @@
 #!/bin/bash
 cd ~
+rm -r GridExperiment/results
 mkdir GridExperiment/results
 
 #SET UP SUBNET
