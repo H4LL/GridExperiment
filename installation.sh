@@ -1,4 +1,4 @@
-#!/ bin / bash
+#!/bin/bash
 
 #Get Updates
 sudo apt update
@@ -19,6 +19,9 @@ bash Anaconda3-2019.03-Linux-x86_64.sh
 export PATH=~/anaconda3/bin:$PATH
 source ~/.bashrc
 
+#Add the domain
+sudo echo '127.0.0.1       host.docker.internal' >> /etc/hosts
+
 #Install PySyft req
 conda create -n pysyft python=3.7
 conda activate pysyft
@@ -32,14 +35,13 @@ pip install matplotlib
 cd ~
 git clone https://github.com/OpenMined/PySyft.git
 cd PySyft/
-git checkout 79d1507cd90435a0203b07fc670699507fade7c5
 pip install .
 
-#Install PyGrid
+# Create PyGrid images
 cd ~
 git clone https://github.com/OpenMined/PyGrid.git
 cd PyGrid
-git checkout 728f99b07669af795907d1e6d88fe3ceab9ac955
-pip install .
+sudo docker build -t openmined/grid-n ./app/websocket/
+sudo docker build -t openmined/grid-gateway ./gateway/
 
 git clone https://github.com/H4LL/GridExperiment.git
